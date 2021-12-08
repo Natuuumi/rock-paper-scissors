@@ -65,11 +65,14 @@ function game(playerSelection = "rock"){
         }
     } 
     if (playerWin === computerWin){
-        return "its a draw"
+        console.log("its a draw")
+        
     } else if (playerWin) {
-        return "you win with " + playerWin + " points"
+        console.log("you win with " + playerWin + " points")
+        
     }else {
-        return "you lost, the computer won with " + computerWin +" points"
+        console.log("you lost, the computer won with " + computerWin +" points")
+        
     }
 }
 game()
